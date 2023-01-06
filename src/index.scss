@@ -1,0 +1,239 @@
+/* variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Roboto';
+    line-height: 1.71;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+$light-blue: #0079BF;
+$dark-blue: #0067A3;
+$light-grey: #EBECF0;
+$dark-grey: #5E6C84;
+$white: #FFFFFF;
+
+.hidden {
+    display: none;
+}
+
+.cursPointer {
+    cursor: pointer;
+}
+
+.app {
+    background-color: $light-blue; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app__ava-group {
+    display: flex;
+    align-items: center;
+}
+
+.app__ava {
+    background-color: $white;
+    border-radius: 9999px;
+    margin-right: 6px;
+}
+
+.app__header {
+    position: relative;
+}
+
+.app__header, .app__footer {
+    background-color: $dark-blue;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.app__footer {
+    font-size: 18px;
+}
+
+.app__footer-count {
+    display: flex;
+}
+
+.app__footer-count p:not(:last-child) {
+    margin-right: 35px;
+}
+
+.app__header-title {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.app__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.board {
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.board__title {
+    margin-bottom: 15px;
+}
+
+.task, .inputForm, .dropdown {
+    background-color: $white;
+    margin-bottom: 15px;
+    padding: 8px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.input-box {
+    padding: 4px;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    padding: 4px;
+    border-bottom: 1px solid $dark-grey;
+}
+
+.button {
+    color: $dark-grey;
+    cursor: pointer;
+    border: none;
+}
+
+.button-submit {
+    background-color: $light-blue;
+    color: $white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.cardForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputForm {
+    border: none;
+}
+
+.inputForm::placeholder {
+    border-bottom: 1px solid $dark-grey;
+}
+
+.app__menu {
+    background-color: $white;
+    color: #000000;
+    font-size: 14px;
+    width: 134px;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+.app__menu li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.app__menu-rect {
+    transform: rotate(45deg);
+    width: 11px;
+    height: 11px;
+    background-color: $white;
+    position: absolute;
+    top: -5px;
+    right: 42px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task:hover {
+    background-color: #DEDEDE;
+} 
+
+.fullTask {
+    border-radius: 5px;
+    background-color: $white;
+    height: 80vh;
+    margin: 26px;
+    position: relative;
+    padding: 0 30px;
+}
+
+.fullTask-title {
+    padding-top: 22px;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.fullTask-description {
+    font-size: 18px;
+}
+
+.fulTask__cross {
+    position: absolute;
+    right: 23px;
+    top: 17px;
+    font-size: 32px;
+}
+
+@media (max-width: 734px) {
+    .app__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app__header {
+        justify-content: flex-end;
+    }
+
+    .app__header-title, .app__footer {
+        display: none;
+    }
+
+    .board {
+        width: 100%;
+    }
+
+    .board:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 735px) {
+    .board:not(:last-child) {
+        margin-right: 26px;
+    }
+}

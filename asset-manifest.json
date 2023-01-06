@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kanban_react/static/css/main.0b944376.css",
+    "main.js": "/kanban_react/static/js/main.76462c77.js",
+    "static/js/787.b5fabc54.chunk.js": "/kanban_react/static/js/787.b5fabc54.chunk.js",
+    "static/media/ava.svg": "/kanban_react/static/media/ava.8c75e22659ff0c8d0c51b327365a7432.svg",
+    "index.html": "/kanban_react/index.html",
+    "static/media/arrow_down.svg": "/kanban_react/static/media/arrow_down.9bf3f8711ba85a40967c00df6b1711aa.svg",
+    "static/media/arrow_up.svg": "/kanban_react/static/media/arrow_up.b525214c1154aab855d6d5f6e45e2d68.svg",
+    "static/media/tick_down.svg": "/kanban_react/static/media/tick_down.157e19ef20c6da73ccf75044dffd1777.svg",
+    "main.0b944376.css.map": "/kanban_react/static/css/main.0b944376.css.map",
+    "main.76462c77.js.map": "/kanban_react/static/js/main.76462c77.js.map",
+    "787.b5fabc54.chunk.js.map": "/kanban_react/static/js/787.b5fabc54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b944376.css",
+    "static/js/main.76462c77.js"
+  ]
+}
